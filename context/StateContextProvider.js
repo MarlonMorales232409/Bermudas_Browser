@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState } from 'react'
 const StateContext = createContext()
 const baseUrl = 'https://google-search3.p.rapidapi.com/api/v1'
 
-const apiKey = process.env.API_KEY;
+const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 console.log(apiKey)
 
 export const StateContextProvider = ({ children }) => {
