@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { Loading } from './Loading'
 import { useStateContext } from '../context/StateContextProvider'
-import ReactPlayer from 'react-player'
 // Result nav pages
 import All from './navPages/All'
 import Images from './navPages/Images'
@@ -34,7 +33,7 @@ const ResultData = ({ url }) => {
       return <All results={results} />
 
     case 'images':
-      <Images results={results} />
+      return <Images results={results} />
 
     case 'videos':
       return <Videos results={results} />

@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Images = ({results}) => {
+
   return (
     <div className="flex flex-wrap items-center justify-center">
           {results?.image_results?.map(
